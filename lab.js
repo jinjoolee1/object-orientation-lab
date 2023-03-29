@@ -184,8 +184,17 @@ console.log(user)
 */
 
 //Code here
+class Cat {
+  constructor(name, age, color) {
+    this.name = name
+    this.age = age
+    this.color = color
+  }
+}
 
+const Oscar = new Cat('Oscar', 8, 'cream & brown')
 
+console.log(Oscar.name)
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
@@ -221,8 +230,21 @@ console.log(user)
 */
 
 //Code Here
+class Wizard {
+  constructor(name, age, favoriteSpell) {
+    this.name = name
+    this.age = age
+    this.favoriteSpell = favoriteSpell
+  }
 
-  
+  castSpell() {
+    console.log(`${this.name} has cast ${this.favoriteSpell}`)
+  }
+}
+
+const ron = new Wizard('Ron', 11, 'Eat slugs, Malfoy')
+
+ron.castSpell()
 /*
     Next make three new phone instances using your class.
     Send in values of your choice. They should match these data types:
